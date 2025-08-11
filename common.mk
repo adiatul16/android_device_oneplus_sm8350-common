@@ -260,6 +260,7 @@ PRODUCT_PACKAGES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.oplus-multihal \
+    libdumpstateutil.vendor \
     sensors.oplus
 
 PRODUCT_COPY_FILES += \
