@@ -168,6 +168,13 @@ echo 0-3 > /dev/cpuset/restricted/cpus
 echo 0-3 > /dev/cpuset/system-background/cpus
 echo 0-6 > /dev/cpuset/foreground/cpus
 
+#cpu cgroup
+echo 3 > /dev/cpuctl/background/cpu.uclamp.window_policy
+echo 1 > /dev/cpuctl/background/cpu.uclamp.discount_wait_time
+echo 1 > /dev/cpuctl/background/cpu.uclamp.ed_task_filter
+echo 1 > /dev/cpuctl/background/cpu.uclamp.top_task_filter
+echo 1 > /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive
+
 # Turn off scheduler boost at the end
 echo 0 > /proc/sys/kernel/sched_boost
 
