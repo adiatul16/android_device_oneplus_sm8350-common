@@ -223,6 +223,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_codecs_yupik_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_yupik_v1.xml \
     $(LOCAL_PATH)/media/media_codecs_c2_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2_dolby_audio.xml
 
+# NrModeSwitcher
+PRODUCT_PACKAGES += \
+    NrModeSwitcher
 
 # Overlays
 $(call inherit-product, hardware/oplus/overlay/generic/generic.mk)
