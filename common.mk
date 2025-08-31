@@ -258,6 +258,7 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service-qti
 
 $(call soong_config_set,qtipower,tap_to_wake_node,/proc/touchpanel/double_tap_enable)
+$(call soong_config_set,qtipower,interaction_boost,true)
 
 # QTI fwk-detect
 PRODUCT_PACKAGES += \
