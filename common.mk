@@ -236,7 +236,8 @@ PRODUCT_PACKAGES += \
     OPlusFrameworksResCommon \
     OPlusSettingsResCommon \
     OPlusSystemUIResCommon \
-    WifiResTarget
+    WifiResTarget \
+    SimpleDeviceConfigCommon
 
 # Partitions
 PRODUCT_PACKAGES += \
